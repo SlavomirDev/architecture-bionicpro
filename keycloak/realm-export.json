@@ -120,7 +120,8 @@
         "standardFlowEnabled": true,
         "implicitFlowEnabled": false,
         "attributes": {
-          "pkce.code.challenge.method": "S256"
+          "pkce.code.challenge.method": "S256",
+          "pkce.required": "true"
         }
       },
       {
