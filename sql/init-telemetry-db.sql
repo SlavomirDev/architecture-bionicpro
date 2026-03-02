@@ -10,8 +10,6 @@ CREATE TABLE IF NOT EXISTS telemetry_data (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-\copy telemetry_data FROM '/tmp/telemetry_data.csv' WITH (FORMAT CSV, HEADER true);
-
 CREATE TABLE IF NOT EXISTS movement_logs (
     log_id SERIAL PRIMARY KEY,
     customer_id INTEGER,
@@ -21,5 +19,3 @@ CREATE TABLE IF NOT EXISTS movement_logs (
     session_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
-\copy movement_logs FROM '/tmp/movement_logs.csv' WITH (FORMAT CSV, HEADER true);
