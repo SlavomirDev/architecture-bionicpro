@@ -1,0 +1,12 @@
+*.log
+/.vs/
+.DS_Store
+
+**/bin/
+**/obj/
+**//Backups/
+**//Builds/
+**/.config/
+
+*.user
+*/privacy_policy.html
